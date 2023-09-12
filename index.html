@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Benni</title>
+</head>
+<body>
+  <a href="#section-to-scroll-to" class="scroll-down-arrow">
+    <span class="arrow-down"></span>
+  </a>
+
+  <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="contactModalLabel">Contact Information</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p><strong>Email:</strong> <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+                <p><strong>Phone:</strong> <a href="tel:+11234567890">+1 (123) 456-7890</a></p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+  </div>
+
+  <div class="sticky-top" style="background-color: #333;" >
+    <nav class="navbar navbar-expand-lg container">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="/Untitled-1.png" alt="logo" width="45" height="45">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#projects">Showcases</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about-me">About</a>
+              </li>
+            </ul>
+            <div class="d-flex">
+              <button class="btn btn-contact-me" aria-current="page" href="#" data-bs-toggle="modal" data-bs-target="#contactModal" >Contact me</button>
+            </div>
+          </div>
+        </div>
+      </nav>
+  </div>
+
+  <section id="hero" class="container-fluid p-0">
+    <div class="hero-bg" style="background-image: url('bg.png');">
+        <div class="hero-content text-center text-black">
+            <br>
+          <h3 class="mt- display-5" style="font-family: serif;">Hello, 👋 my name is</h3>
+          <h1 style="font-family: 'Cormorant Garamond';" class="display-3">BENNY IMANY</h1>
+          <h2 class="display-5">I am a <span class="display-4" style="font-family: 'Oooh Baby', cursive; font-weight: 900;">graphic designer</span></h2>
+          <div id="bubbles-container" class="hero-content text-center text-white"></div>
+        </div>
+    </div>
+  </section>
+
+  <section id="projects" class="container-fluid p-0" style="background-color: #cae2c1;">
+    <div class="container text-center py-5">
+        <h2 class="display-5" style="font-weight: bold; font-family: sans-serif; text-decoration: underline;">Projects</h2>
+    </div>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6 mb-4">
+                <div class="card" style="width: 100%;">
+                    <img src="/project/photo_2023-07-30_00-33-42.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title 1</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="/project1.html" class="btn btn-primary btn-project">Details</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 mb-4">
+                <div class="card" style="width: 100%;">
+                    <img src="/project/photo_2023-07-30_00-36-05.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title 2</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="/project2.html" class="btn btn-primary btn-project">Details</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 mb-4">
+                <div class="card" style="width: 100%;">
+                    <img src="/project/photo_2023-08-12_12-13-05.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title 3</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="/project3.html" class="btn btn-primary btn-project">Details</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 mb-4">
+                <div class="card" style="width: 100%;">
+                    <img src="/project/photo_2023-08-21_23-59-44.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title 4</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="/project4.html" class="btn btn-primary btn-project">Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </section>
+
+<!-- About Me -->
+<section id="about-me" class="container-fluid p-0" style="background-color: #333;">
+    <div class="container text-center py-5">
+        <h2 class="display-5" style="font-weight: bold; font-family: sans-serif; color: #fff; text-decoration: underline; ">About Me
+            <a class="navbar-brand" href="#">
+                <img src="/Untitled-1.png" alt="logo" width="45" height="45">
+            </a>
+        </h2>
+    </div>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="about-me-box">
+                    <p class="about-me-text">
+                        Meet Behnam Imany, a passionate <span class="highlight">graphic designer</span> with a flair for creativity and a keen eye for detail. With a background in both design and art, Behnam brings a unique blend of <span class="highlight">artistic sensibility</span> and <span class="highlight">technical expertise</span> to every project.
+                    </p>
+
+                    <!-- Skills List -->
+                    <div class="container-fluid align-content-center text-center" >
+                    <div class="skills-list">
+                        <div class="column">
+                            <ul>
+                                <li>Adobe Photoshop</li>
+                                <li>Adobe Illustrator</li>
+                                <li>Adobe After Effects</li>
+                                <li>Figma</li>
+                                <li>Blender</li>
+                            </ul>
+                        </div>
+                        <div class="column">
+                            <ul>
+                                <li>UI/UX Design</li>
+                                <li>Logo Design</li>
+                                <li>Image Creation</li>
+                                <li>Graphic Design</li>
+                                <li>Typography</li>
+                            </ul>
+                        </div>
+                        <div class="column">
+                            <ul>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+                <br>
+<div class="text-center">
+    <button class="btn btn-d" href="/4_6015110176313445907.pdf">Download my Full resume file.pdf</button>
+
+</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br><br>
+</section>
+
+
+
+
+  <footer style="background-color: #000000; color: #fff;">
+    <div class="container py-4">
+        <div class="row">
+            <div class="col-md-6">
+                <h3 style="font-weight: bold;">BENNI</h3>
+                <p>&copy; 2023 BENNI. All rights reserved.</p>
+            </div>
+            <div class="col-md-6 text-md-end">
+                <a href="#" class="social-icon"><img src="/assets/icons8-instagram-48.png" alt="Insragram"></a>
+                <a href="#" class="social-icon"><img src="/assets/icons8-telegram-48.png" alt="Telegram"></a>
+                <a href="#" class="social-icon"><img src="/assets/icons8-youtube-48.png" alt="Youtube"></a>
+            </div>
+        </div>
+    </div>
+    <a href="#top" class="scroll-to-top">
+        <i class="bi bi-arrow-up-circle"></i>
+    </a>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  <button id="scrollToTopBtn" class="btn btn-primary rounded-circle" title="Scroll to Top">
+    <i class="bi bi-arrow-up-circle text-white"></i>
+  </button>
+  <script src="app.js"></script>
+  <div id="scrollPopup" class="scroll-popup">
+    <div class="scroll-popup-content">
+      <p>Scroll down to explore more</p>
+      <i class="bi bi-arrow-down-circle"></i>
+    </div>
+  </div>  
+  
+</body>
+</html>

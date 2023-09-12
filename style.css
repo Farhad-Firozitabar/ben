@@ -1,0 +1,341 @@
+.hero-bg {
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh; /* Ensures the section takes up the full viewport height */
+}
+@font-face {
+    font-family: 'Oooh Baby';
+    src: url('fonts/OoohBaby-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+.navbar-nav .nav-link {
+    font-weight: bold;
+}
+/* Define the button's default styles */
+.btn-contact-me {
+    background-color: #ff7587;
+    color: rgb(255, 255, 255); /* Set text color to white */
+    font-weight: bold; /* Make the text bold */
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+/* Change the button color on hover */
+.btn-contact-me:hover {
+    background-color: #e99fa8;
+}
+
+/* Add a click animation */
+.btn-contact-me:active {
+    transform: scale(0.95);
+}
+
+/* Add a subtle wiggle animation */
+.btn-contact-me:hover::after {
+    content: '\200B'; /* Add some content for pseudo-element */
+    display: inline-block;
+    animation: wiggle 0.2s ease infinite;
+}
+
+/* Define the wiggle animation */
+@keyframes wiggle {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-2px); }
+    50% { transform: translateX(2px); }
+    75% { transform: translateX(-2px); }
+    100% { transform: translateX(2px); }
+}
+/* Style the Project header */
+#projects {
+    background-color: #fff; /* Set the background color for the Projects section */
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+/* Style the card buttons */
+.btn-project {
+    background-color: #8333cc;
+    color: #fff;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    border: none;
+}
+
+/* Add a cool animation on hover */
+.btn-project:hover {
+    background-color: #6633aa; /* Change color on hover */
+    transform: scale(1.05); /* Add a slight scale effect on hover */
+}
+
+/* Add an animation when clicked */
+.btn-project:active {
+    transform: scale(0.95); /* Add a slight scale effect when clicked */
+}
+/* Style the Projects text */
+#projects h2 {
+    font-weight: bold;
+    font-family: serif;
+}
+/* Style the About Me text */
+.about-me-text {
+    font-size: 1.4rem; /* Increase font size for better readability */
+    text-align: left;
+    color: #333;
+    line-height: 1.6;
+    padding: 30px; /* Increase padding for a larger box */
+    background-color: rgba(255, 255, 255, 0.8); /* Add a semi-transparent white background */
+    border-radius: 15px; /* Make the corners more rounded */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+    font-weight: bold; /* Make the text bolder */
+}
+
+/* Style the highlighted text */
+.highlight {
+    color: #8333cc; /* A cool purple color for highlights */
+}
+
+/* Add a cool animation on hover */
+.about-me-text:hover {
+    transform: scale(1.02); /* Slight zoom effect */
+    transition: transform 0.2s ease-in-out;
+}
+/* Style for social media icons */
+.social-icon img {
+    width: 30px;
+    margin: 0 10px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.social-icon img:hover {
+    transform: scale(1.2); /* Zoom in on hover */
+}
+
+/* Style for the scroll-to-top arrow */
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #8333cc;
+    color: #fff;
+    font-size: 30px;
+    border-radius: 50%;
+    padding: 10px;
+    display: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.scroll-to-top:hover {
+    background-color: #6633aa; /* Darker color on hover */
+}
+/* Style the About Me text */
+.about-me-text {
+    font-size: 1.4rem; /* Increase font size for better readability */
+    text-align: left;
+    color: #333;
+    line-height: 1.6;
+    padding: 30px; /* Increase padding for a larger box */
+    background-color: rgba(255, 255, 255, 0.8); /* Add a semi-transparent white background */
+    border-radius: 15px; /* Make the corners more rounded */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+    font-weight: bold; /* Make the text bolder */
+}
+
+/* Style the highlighted text */
+.highlight {
+    color: #8333cc; /* A cool purple color for highlights */
+}
+
+/* Add a cool animation on hover */
+.about-me-text:hover {
+    transform: scale(1.02); /* Slight zoom effect */
+    transition: transform 0.2s ease-in-out;
+}
+#scrollToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    font-size: 30px;
+    background-color: #8333cc; /* Button background color */
+    color: #fff; /* Button text color */
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#scrollToTopBtn:hover {
+    background-color: #6633aa; /* Darker color on hover */
+}
+
+/* Add the white color to the arrow icon */
+#scrollToTopBtn i {
+    color: #fff; /* Arrow color */
+}
+/* Updated CSS for bubbles */
+.bubble {
+    position: absolute;
+    background-color: #fbb7c0; /* Set bubble color */
+    width: 20px; /* Default width */
+    height: 20px; /* Default height */
+    border-radius: 50%;
+    pointer-events: none;
+    animation-name: float;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    transform-origin: center;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5); /* Add white curved shadow */
+  }
+  
+  @keyframes float {
+    0% {
+      transform: translateY(0) scale(1);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(-100px) scale(0.5);
+      opacity: 0;
+    }
+
+  }
+  /* Navbar Styles */
+.navbar {
+  background-color: #333; /* Dark background color */
+}
+
+.navbar-nav .nav-link {
+  color: #fff; /* White text color */
+  font-weight: bold; /* Make the text bold */
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+/* Add neon effect on hover */
+.navbar-nav .nav-link:hover {
+  color: #7f2ccb; /* Neon accent color */
+  text-shadow: 0 0 10px #7f2ccb, 0 0 20px #7f2ccb, 0 0 30px #7f2ccb; /* Neon text shadow */
+}
+/* Contact Me Button Styles */
+.btn-contact-me {
+    background-color: #7f2ccb; /* Neon button color */
+    color: #fff; /* White text color */
+    font-weight: bold; /* Make the text bold */
+    border: none;
+    transition: background-color 0.3s ease, transform 0.2s ease, color 0.3s ease; /* Smooth transitions */
+    text-shadow: 0 0 10px #7f2ccb, 0 0 20px #7f2ccb, 0 0 30px #7f2ccb; /* Neon text shadow */
+  }
+  
+  /* Neon effect on hover and click */
+  .btn-contact-me:hover,
+  .btn-contact-me:active {
+    background-color: #fff; /* White background on hover and click */
+    color: #7f2ccb; /* Neon text color on hover and click */
+    transform: scale(1.05); /* Slight scale effect on hover and click */
+  }
+/* Scroll Popup Styles */
+.scroll-popup {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 50px 50px 0 50px;
+    transform: translateY(100%);
+    opacity: 0;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    cursor: pointer;
+}
+
+.scroll-popup-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.scroll-popup p {
+    margin: 0;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+/* Arrow icon inside the popup */
+.scroll-popup i {
+    font-size: 24px;
+}
+
+/* Animate the popup */
+@keyframes bounceUpDown {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+/* Style for the combined About Me box */
+.about-me-box {
+    background-color: #000; /* Black background color */
+    color: #fff; /* White text color */
+    border-radius: 15px; /* Rounded corners */
+    padding: 20px; /* Add padding for spacing */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add shadow */
+    margin-top: 20px; /* Adjust top margin as needed */
+}
+
+/* Style for the Skills List */
+.skills-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Style for columns within the Skills List */
+.column {
+    flex: 0 0 48%; /* Adjust the width of columns as needed */
+}
+
+/* Style for the bullet point list */
+.skills-list ul {
+    list-style-type: disc; /* Use bullet points for the list */
+    padding-left: 20px; /* Add left padding for bullets */
+}
+
+/* Style for individual skills */
+.skills-list li {
+    margin: 5px 0; /* Add vertical spacing between skills */
+}
+.btn-d {
+    background-color: #7f2ccb;
+    color: rgb(255, 255, 255); /* Set text color to white */
+    font-weight: bold; /* Make the text bold */
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+/* Change the button color on hover */
+.btn-d:hover {
+    background-color: #e99fa8;
+}
+
+/* Add a click animation */
+.btn-d:active {
+    transform: scale(0.95);
+}
+
+/* Add a subtle wiggle animation */
+.btn-d:hover::after {
+    content: '\200B'; /* Add some content for pseudo-element */
+    display: inline-block;
+    animation: wiggle 0.2s ease infinite;
+}
+
+/* Define the wiggle animation */
+@keyframes wiggle {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-2px); }
+    50% { transform: translateX(2px); }
+    75% { transform: translateX(-2px); }
+    100% { transform: translateX(2px); }
+}
